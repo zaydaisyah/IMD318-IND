@@ -58,16 +58,33 @@
     }
     </style>
 
-	<!--Header-->
-	<div class="w-full m-0 p-0 bg-cover bg-bottom" style="background-image:url('image/cover\ atas.jpg'); height: 60vh; max-height:460px;">
-			<div class="container max-w-4xl mx-auto pt-16 md:pt-32 text-center break-normal">
-				<!--Title-->
-					<p class="text-white font-extrabold text-3xl md:text-5xl">
-						Zahidah's Place
-					</p>
-					<p class="text-xl md:text-2xl text-gray-500 underline">Welcome to my Website</p>
-			</div>
-		</div>
+    <div class="w-full m-0 p-0 bg-cover bg-bottom" style="background-image:url('image/cover atas.jpg'); height: 60vh; max-height:460px;">
+        <div class="container max-w-4xl mx-auto pt-16 md:pt-32 text-center break-normal">
+            <!-- Custom Animation -->
+            <style>
+                @keyframes fadeSlide {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(-20px);
+                    }
+                    100% {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+
+                .fade-slide {
+                    animation: fadeSlide 1.5s ease-out;
+                }
+            </style>
+
+            <!-- Title -->
+            <p class="text-white font-extrabold text-3xl md:text-5xl fade-slide">
+                Zahidah's Place
+            </p>
+            <p class="text-xl md:text-2xl text-gray-500 underline">Welcome to my Website</p>
+        </div>
+    </div>
 		
 		<!--Container-->
 		<div class="container px-4 md:px-0 max-w-6xl mx-auto -mt-32">
@@ -137,6 +154,16 @@
 					</div>
 			    </div>
 			    <!--/Lead Card-->
+
+				<!--Sound-->
+				<div style="text-align: center;">
+
+					<audio controls>
+						<source src="audio/SZA - Cry Baby (Lyrics).mp3" type="audio/ogg">
+						<source src="audio/SZA - Cry Baby (Lyrics).mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+					</audio>
+				</div>
 			
 				<!--Posts Container-->
 				<div class="flex flex-wrap justify-between pt-12 -mx-6">
